@@ -82,9 +82,8 @@ As a first step I studied how the tables relate to each other and created a **da
 
 The diagram below shows the primary keys and the relationships between the tables.
 
-📌 [`**Database diagram:**`](doc/database_diagram.png)    
+📌 [`**Database diagram:**`](database_diagram/database_diagram.png)    
 
-<!-- Embed with: ![Database Diagram](docs/database_diagram.png) -->
 
 ## Data Quality & Cleaning
 
@@ -153,7 +152,7 @@ Olist-E-Commerce-Business-Performance-Analysis/
 
 ## Author : *[Meena Rawat]*
 
-**Contact:** [LinkedIn](www.linkedin.com/in/meenarawat04) | [Email](mailto:meenarawat04@gmail.com)
+**Contact:** [`LinkedIn`](www.linkedin.com/in/meenarawat04) | [`Email`](mailto:meenarawat04@gmail.com)
 
 
 *Dataset source: Olist & André Sionek, via Kaggle (CC BY-NC-SA 4.0).*
