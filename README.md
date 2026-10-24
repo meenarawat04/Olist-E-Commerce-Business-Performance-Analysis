@@ -19,12 +19,6 @@ The project will cover three areas of business performance: **revenue**, **deliv
 > **How is revenue performing, and what drives it?**
 > *(Exact sub-questions will be finalised as the analysis progresses.)*
 
-### Database Diagram
-
-The diagram below shows the primary keys and the relationships between the tables.
-
-📌 ![Database diagram](database_diagram/database_diagram.png)    
-
 ## Dataset
 
 The dataset consists of 9 tables. Below is the number of records in each:
@@ -44,6 +38,12 @@ The dataset consists of 9 tables. Below is the number of records in each:
 ## Database Design
 
 As a first step I studied how the tables relate to each other and created a **database diagram** that defines the **primary key** for each table wherever one exists and shows the relationships between the tables.
+
+### Database Diagram
+
+The diagram below shows the primary keys and the relationships between the tables.
+
+📌 ![Database diagram](database_diagram/database_diagram.png)    
 
 ### Primary Keys
 
