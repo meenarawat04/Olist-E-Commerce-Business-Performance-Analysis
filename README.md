@@ -6,24 +6,6 @@ An end-to-end business performance analysis of the [Brazilian E-Commerce Public 
 
 > 🚧 **Project status: In progress.** I have started working with the data. Right now I'm focused on understanding the structure of the dataset and cleaning it before moving to deeper analysis.
 
----
-
-## Table of Contents
-
-1. [Project Overview](#project-overview)
-2. [Business Question](#business-question)
-3. [Dataset](#dataset)
-4. [Database Design](#database-design)
-5. [Data Quality & Cleaning](#data-quality--cleaning)
-6. [Exploratory Data Analysis](#exploratory-data-analysis)
-7. [Revenue Analysis](#revenue-analysis)
-8. [Key Insights](#key-insights)
-9. [Recommendations](#recommendations)
-10. [Tools & Technologies](#tools--technologies)
-11. [Repository Structure](#repository-structure)
-
----
-
 ## Project Overview
 
 Olist connects small businesses in Brazil to larger marketplaces. The dataset contains roughly 100k orders placed between 2016 and 2018, linked across multiple tables describing the customer, the order, the products, the seller, payments and reviews.
@@ -37,11 +19,11 @@ The project will cover three areas of business performance: **revenue**, **deliv
 > **How is revenue performing, and what drives it?**
 > *(Exact sub-questions will be finalised as the analysis progresses.)*
 
-| Phase | Focus | Status |
-|---|---|---|
-| 1 | Revenue | 🔄 In progress |
-| 2 | Delivery performance | 🚧 Coming soon |
-| 3 | Customer satisfaction | 🚧 Coming soon |
+### Database Diagram
+
+The diagram below shows the primary keys and the relationships between the tables.
+
+📌 ![Database diagram](database_diagram/database_diagram.png)    
 
 ## Dataset
 
@@ -58,7 +40,6 @@ The dataset consists of 9 tables. Below is the number of records in each:
 | `ol_sellers` | Seller IDs and location | 3,095 |
 | `ol_geolocation` | Zip code prefixes with latitude/longitude | 1,000,163 |
 | `ol_product_category_name_translation` | Portuguese → English category names | 71 |
-
 
 ## Database Design
 
@@ -77,12 +58,6 @@ As a first step I studied how the tables relate to each other and created a **da
 | `ol_sellers` | `seller_id` |
 | `ol_product_category_name_translation` | `product_category_name` |
 | `ol_geolocation` | *None – zip code prefixes repeat, so no natural key exists* |
-
-### Database Diagram
-
-The diagram below shows the primary keys and the relationships between the tables.
-
-📌 [`**Database diagram:**`](database_diagram/database_diagram.png)    
 
 
 ## Data Quality & Cleaning
@@ -145,14 +120,9 @@ Olist-E-Commerce-Business-Performance-Analysis/
 ├── docs/
 │   └──  
 └── images/                     
-
 ```
 
----
-
 ## Author : *[Meena Rawat]*
-
-**Contact:** [`LinkedIn`](www.linkedin.com/in/meenarawat04) | [`Email`](mailto:meenarawat04@gmail.com)
-
+**Contact:** [`LinkedIn`](https://www.linkedin.com/in/meenarawat04) | [`Email`](mailto:meenarawat04@gmail.com)
 
 *Dataset source: Olist & André Sionek, via Kaggle (CC BY-NC-SA 4.0).*
